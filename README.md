@@ -16,8 +16,25 @@ cd timeseries_forecasting
 
 # Install dependencies with uv
 uv sync
+```
 
-# Run the forecasting comparison
+## Usage
+
+### Web Interface (Gradio)
+
+```bash
+uv run python timeseries_forecasting/app.py
+```
+
+Then open http://localhost:7860 in your browser to:
+- Upload your CSV time series data
+- Select TimesFM or ARIMA model
+- Get forecasts with visualizations
+- Use the chat assistant to fix CSV format issues
+
+### Command Line Demo
+
+```bash
 uv run python timeseries_forecasting/demand_forecasting.py
 ```
 
